@@ -35,3 +35,10 @@ git mv anatomy embed/anatomy
 git mv anatomy-couch admin
 git mv anatomy-filters embed/filters
 git mv anatomy-vendor vendor
+
+
+
+# Self destruct && touch new config files
+rm -rf anatomy-install
+cp admin/config.example.php admin/config.php && sublime admin/config.php
+cp admin/addons/kfunctions.example.php admin/addons/kfunctions.php && sublime admin/addons/kfunctions.php
