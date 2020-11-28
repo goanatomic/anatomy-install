@@ -16,6 +16,8 @@ mkdir assets/img && touch assets/img/.gitkeep
 mkdir assets/js && touch assets/js/client.js
 
 mkdir embed
+touch embed/.htaccess
+echo "deny from all" >> embed/.htaccess
 mkdir embed/client
 touch embed/client/funcs.html
 touch embed/client/vars.html
