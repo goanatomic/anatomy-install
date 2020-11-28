@@ -16,6 +16,7 @@ mkdir assets/css && touch assets/css/.gitkeep
 mkdir assets/img && touch assets/img/.gitkeep
 mkdir assets/js && touch assets/js/client.js
 
+mkdir embed
 mkdir embed/client
 touch embed/client/funcs.html
 touch embed/client/vars.html
