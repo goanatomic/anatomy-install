@@ -1,6 +1,5 @@
 #!/bin/bash
-git submodule add https://github.com/goanatomic/anatomy-ac.git
-git mv anatomy-ac ac
+git submodule add https://github.com/goanatomic/anatomy-ac.git ac
 
 for item in anatomy make model remove; do
 	chmod +x ac/$item
@@ -26,15 +25,10 @@ for item in footer head header; do
 	echo "<cms:extends 'anatomy/layout/$item.html' />" >> embed/client/layout/$item.html
 done
 
-git submodule add https://github.com/goanatomic/anatomy.git
-git submodule add https://github.com/goanatomic/anatomy-couch.git
-git submodule add https://github.com/goanatomic/anatomy-filters.git
-git submodule add https://github.com/goanatomic/anatomy-vendor.git
-
-git mv anatomy embed/anatomy
-git mv anatomy-couch admin
-git mv anatomy-filters embed/filters
-git mv anatomy-vendor vendor
+git submodule add https://github.com/goanatomic/anatomy.git embed/anatomy
+git submodule add https://github.com/goanatomic/anatomy-couch.git admin
+git submodule add https://github.com/goanatomic/anatomy-filters.git embed/filters
+git submodule add https://github.com/goanatomic/anatomy-vendor.git vendor
 
 
 
