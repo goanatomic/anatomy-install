@@ -42,10 +42,10 @@ for item in footer head header; do
 done
 
 # Add other Anatomy submodules
-git submodule add git@github.com:goanatomic/anatomy.git embed/anatomy
-git submodule add git@github.com:goanatomic/anatomy-couch.git admin
-git submodule add git@github.com:goanatomic/anatomy-filters.git embed/filters
-git submodule add git@github.com:goanatomic/anatomy-vendor.git vendor
+git submodule add https://github.com/goanatomic/anatomy.git embed/anatomy
+git submodule add https://github.com/goanatomic/anatomy-couch.git admin
+git submodule add https://github.com/goanatomic/anatomy-filters.git embed/filters
+git submodule add https://github.com/goanatomic/anatomy-vendor.git vendor
 
 
 
