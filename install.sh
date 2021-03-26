@@ -51,5 +51,10 @@ git submodule add git@github.com:goanatomic/anatomy-vendor.git vendor
 
 # Self destruct && touch new config files
 rm -rf anatomy-install
-cp admin/config.example.php admin/config.php && sublime admin/config.php
-cp admin/addons/kfunctions.example.php admin/addons/kfunctions.php && sublime admin/addons/kfunctions.php
+cp admin/config.example.php admin/config.php
+cp admin/addons/kfunctions.example.php admin/addons/kfunctions.php
+if sublime &> /dev/null
+then
+	sublime admin/config.php
+	sublime admin/addons/kfunctions.php
+fi
