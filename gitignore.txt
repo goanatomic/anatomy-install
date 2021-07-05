@@ -1,0 +1,7 @@
+/.htaccess
+/assets/css/v*.*.*.min.css
+/admin/config.php
+/vendor/
+/logs/
+node_modules
+.DS_Store

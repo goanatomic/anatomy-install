@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git init
+
 # Install Anatomy scripts
 git submodule add https://github.com/goanatomic/anatomy-ac.git ac
 
@@ -45,7 +47,8 @@ done
 git submodule add https://github.com/goanatomic/anatomy.git embed/anatomy
 git submodule add https://github.com/goanatomic/anatomy-couch.git admin
 git submodule add https://github.com/goanatomic/anatomy-filters.git embed/filters
-git submodule add https://github.com/goanatomic/anatomy-vendor.git vendor
+composer require 'cloudinary/cloudinary_php:^2'
+cp anatomy-install/gitignore.txt ./.gitignore
 
 
 
